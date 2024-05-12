@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="stylesheets/StyleSheet.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="HomePage.php">Movie Review</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="HomePage.php">Movies</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="nav-link" href="login.php">Login/Register</a>
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <H2>Register Form</H2>
+
+        <form method="post" action="doRegister.php">
+            <p class="infoPage">
+                <label for="idName">Name:</label>
+                <input id="idName" name="name" type="text" placeholder="enter name" class="resizeTextbox" required/><br><br>
+                <label for="date">Date of Birth:</label>
+                <input id="date" name="dob" type="date" class="resizeTextbox"><br><br>
+                <label for="idEmail">Email:</label>
+                <input id="idEmail" type="email" name="email" placeholder="enter email" class="resizeTextbox" required><br><br>
+                <label for="idUsername">Username:</label>
+                <input id="idUsername" type="text" name="username" placeholder="enter username" class="resizeTextbox" required><br><br>
+                <label for="pw">Password:</label>
+                <input id="pw" type="password" name="password" placeholder="enter password" class="resizeTextbox" required><br><br>
+
+                <input type="submit" value="Register" class="button"/> <br><br>
+                <input type="reset" value="Reset" class="button"/>
+
+
+        </p>
+    </form>
+
+
+
+    <hr>
+    <p> copyrights &copy; Movies</p>
+</body>
+</html>
